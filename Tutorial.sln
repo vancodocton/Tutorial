@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealtimeWebApp", "RealtimeWebApp\RealtimeWebApp.csproj", "{BBC6B8BD-3179-4C7C-AE53-A09C8A197ED1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RealtimeWebApp", "RealtimeWebApp\RealtimeWebApp.csproj", "{BBC6B8BD-3179-4C7C-AE53-A09C8A197ED1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UploadFile", "UploadFile\UploadFile.csproj", "{F68863F3-2EC5-4504-AC85-BD69FBDBA7C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{BBC6B8BD-3179-4C7C-AE53-A09C8A197ED1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BBC6B8BD-3179-4C7C-AE53-A09C8A197ED1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BBC6B8BD-3179-4C7C-AE53-A09C8A197ED1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F68863F3-2EC5-4504-AC85-BD69FBDBA7C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F68863F3-2EC5-4504-AC85-BD69FBDBA7C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F68863F3-2EC5-4504-AC85-BD69FBDBA7C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F68863F3-2EC5-4504-AC85-BD69FBDBA7C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
