@@ -12,8 +12,8 @@ using UploadFile.Data;
 namespace UploadFile.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220319145747_AddFileUploadModel")]
-    partial class AddFileUploadModel
+    [Migration("20220319153331_AddFilesModel")]
+    partial class AddFilesModel
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -263,7 +263,7 @@ namespace UploadFile.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("FileOnDatabase");
+                    b.ToTable("FilesOnDatabase");
                 });
 
             modelBuilder.Entity("UploadFile.Models.FileOnFileSystem", b =>
@@ -303,7 +303,7 @@ namespace UploadFile.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("FileOnFileSystem");
+                    b.ToTable("FilesOnFileSystem");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

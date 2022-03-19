@@ -261,7 +261,7 @@ namespace UploadFile.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("FileOnDatabase");
+                    b.ToTable("FilesOnDatabase");
                 });
 
             modelBuilder.Entity("UploadFile.Models.FileOnFileSystem", b =>
@@ -301,7 +301,7 @@ namespace UploadFile.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("FileOnFileSystem");
+                    b.ToTable("FilesOnFileSystem");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

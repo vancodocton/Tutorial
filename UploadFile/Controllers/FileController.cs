@@ -25,9 +25,9 @@ namespace UploadFile.Controllers
         private async Task<FileUploadViewModel> LoadAllFiles()
         {
             var viewModel = new FileUploadViewModel();
-            viewModel.FilesOnDatabase = await context.FileOnDatabase
+            viewModel.FilesOnDatabase = await context.FilesOnDatabase
                 .ToListAsync();
-            viewModel.FilesOnFileSystem = await context.FileOnFileSystem
+            viewModel.FilesOnFileSystem = await context.FilesOnFileSystem
                 .ToListAsync();
             return viewModel;
         }

@@ -11,8 +11,8 @@ namespace UploadFile.Data
         {
 
         }
-        public DbSet<FileOnDatabase> FileOnDatabase { get; set; } = null!;
+        public DbSet<FileOnDatabase> FilesOnDatabase { get; set; } = null!;
 
-        public DbSet<FileOnFileSystem> FileOnFileSystem { get; set; } = null!;
+        public DbSet<FileOnFileSystem> FilesOnFileSystem { get; set; } = null!;
     }
 }

@@ -5,12 +5,12 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace UploadFile.Data.Migrations
 {
-    public partial class AddFileUploadModel : Migration
+    public partial class AddFilesModel : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "FileOnDatabase",
+                name: "FilesOnDatabase",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -25,11 +25,11 @@ namespace UploadFile.Data.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_FileOnDatabase", x => x.Id);
+                    table.PrimaryKey("PK_FilesOnDatabase", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
-                name: "FileOnFileSystem",
+                name: "FilesOnFileSystem",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -44,17 +44,17 @@ namespace UploadFile.Data.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_FileOnFileSystem", x => x.Id);
+                    table.PrimaryKey("PK_FilesOnFileSystem", x => x.Id);
                 });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "FileOnDatabase");
+                name: "FilesOnDatabase");
 
             migrationBuilder.DropTable(
-                name: "FileOnFileSystem");
+                name: "FilesOnFileSystem");
         }
     }
 }
